@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bootstrap Admin Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--  Navbar   -->
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">Admin Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Dashbaord
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages.html">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">Users</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Welcome (User)
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--  Header   -->
+    <header id="header">
+        <div class="container text-left">
+            <div class="row">
+                <div class="col-md-10 ">
+                    <h1>
+                        <span class="fas fa-cog"></span> Dashbaord
+                        <small>Your message here</small>
+
+                    </h1>
+                </div>
+                <div class="col-md-2">
+                    <div class="dropdown crop-id">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Create Content
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" type="button" data-toggle="modal" data-target="#addpage">Create Page</a>
+                            <a class="dropdown-item" href="#">Create Post</a>
+                            <a class="dropdown-item" href="#">Create User</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--  Breadcrumb   -->
+
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb main-color-bg">
+                <li class="active">Dashbaord</li>
+            </ol>
+        </div>
+    </section>
+
+    <!--  Main   -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+
+                <!--  Side Panel   -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active main-color-bg">
+                            <span class="fas fa-cog"></span> Dashbaord
+                        </a>
+                        <a href="pages.html" class="list-group-item list-group-item-action">
+                            <span class="fas fa-file"></span> Pages
+                            <span class="badge badge-dark text-right">10</span>
+                        </a>
+                        <a href="posts.html" class="list-group-item list-group-item-action">
+                            <span class="fas fa-edit"></span> Posts
+                            <span class="badge badge-dark">15</span>
+                        </a>
+                        <a href="users.html" class="list-group-item list-group-item-action">
+                            <span class="fas fa-users"></span> Users
+                            <span class="badge badge-dark">5</span>
+                        </a>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            Disk Space
+                        </div>
+                        <div class="card-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            Bandwidth Used
+                        </div>
+                        <div class="card-body">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Panel-->
+
+                <!-- Website Overview-->
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header main-color-bg">
+                            Website Overview
+                        </div>
+                        <div class="card-deck m-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h2>
+                                        <span class="fas fa-users"></span> 5
+                                    </h2>
+                                    <h4>Users</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h2>
+                                        <span class="fas fa-file"></span> 10
+                                    </h2>
+                                    <h4>Pages</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h2>
+                                        <span class="fas fa-file"></span> 15
+                                    </h2>
+                                    <h4>Posts</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h2>
+                                        <span class="fas fa-chart-bar"></span> 10,090
+                                    </h2>
+                                    <h4>Visitors</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Overview-->
+
+                    <!-- Latest Users -->
+                    <div class="card list-group mt-4">
+                        <a href="#" class="list-group-item list-group-item-action active main-color-bg">
+                            <span class="fas fa-cog"></span> Dashbaord
+                        </a>
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- End of Latest Users -->
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Modals-->
+
+    <div class="modal fade" id="addpage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- Modal Form-->
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="form-group">
+                                    <label for="formGroupExampleInput">Example label</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="formGroupExampleInput2">Another label</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                  </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- Add Page-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
